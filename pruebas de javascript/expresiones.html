@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Prueba pequeña con formularuios</title>
+</head>
+<body>
+	<form action="">
+		<input type="text" name="pene" id="pene">
+		<input type="submit" value="escribir" id="boton">
+	</form>
+	<script>
+		(function () {
+			var valor = document.getElementById("pene");
+			var boton = document.getElementById("boton");
+			var expresion = /[a-z]/;
+
+
+
+			var escribir = function(){
+			var peneman = expresion.test(valor.value);
+			 alert(peneman);
+			 }
+
+			boton.addEventListener("click", escribir);
+
+
+
+
+		}())
+	</script>
+</body>
+</html>

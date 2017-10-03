@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>DOM</title>
+</head>
+   <body>
+      <h1 id="titulo">titulo de nuestro sitio web</h1>
+       <div>
+       	<div id="subtitulo"></div>
+       </div>
+       <p>1 -.Lorem ipsum <b>dolor</b> sit amet, consectetur adipisicing elit. Error magni similique dicta. Sint labore perspiciatis fugiat praesentium minus dolorem reprehenderit sapiente animi, rerum quos, aut, ab natus, officia facilis ipsum.</p>
+       
+       <p id="segundo"> 2-. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem, cum quasi numquam? Vitae cumque eius architecto tenetur modi similique hic quis nemo, numquam. Et dolorem facilis quod alias aliquam perferendis.</p>
+
+       <p>3-. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae architecto amet aut, minus, dolore libero ipsa, est dolorum et consequuntur, aliquam similique non quis inventore dignissimos? Rerum laborum tenetur, amet.</p>
+	  <script>
+	  	
+       var elementosP = document.getElementsByTagName("p");
+
+       var segundoParrafo = document.getElementById("segundo");
+
+       var elemento = document.createElement("h2");
+       var contenido = document.createTextNode("Este es nuestro contenido");
+       elemento.appendChild(contenido);
+
+       elemento.setAttribute("align","center");
+        
+       document.getElementById("subtitulo").appendChild(elemento);
+	  </script>
+   </body>
+</html>

@@ -1,0 +1,201 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+
+	background: #ccc;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+
+	/*flex*/
+	display: flex;
+	flex-direction: row;
+	flex-wrap:wrap;
+}
+
+.contenedor header {
+	background: #2c3e50;
+	width: 100%;
+	padding: 20px;
+
+
+		/*flex*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.contenedor .logo {
+	font-size: 30px;
+	/*color: #fff;*/
+}
+
+.contenedor .logo img {
+	width: 50px;
+	vertical-align: top;
+}
+
+.contenedor .logo a {
+	color: #fff;
+	padding: 10px;
+	text-decoration: none;
+	line-height: 50px;
+}
+
+.contenedor nav {
+	width: 50%;
+
+	/*flex*/
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.contenedor nav a {
+	color: #fff;
+	text-decoration: none;
+	padding: 10px;
+	background:  #c0392b;
+	text-align: center;
+
+	/*flex*/
+	flex-grow: 1;
+}
+
+.contenedor nav a:hover {
+	background: #e74c3c;
+}
+
+.contenedor .main {
+	background: #fff;
+	padding: 20px;
+
+	/*flex*/
+	flex: 1 1 70%;
+}
+
+.contenedor .main article {
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #000;
+}
+
+.contenedor .main article:nth-last-child(1) {
+	margin-bottom: 0;
+	padding-bottom: 0;
+	border:none;
+}
+
+.contenedor aside {
+	background: #e67e22;
+	padding: 20px;
+
+	display:flex;
+	flex: 1 1 30%;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+
+.contenedor aside .widget {
+	background: #d35400;
+	height: 150px;
+	margin: 10px;
+}
+
+.contenedor footer {
+	background:  #2c3e50;
+	width: 100%;
+	padding:20px;
+
+	/*flex*/
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.contenedor footer .links{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.contenedor footer .links a {
+
+ color: #fff;
+ text-decoration: none;
+ padding: 10px;
+ background: #c0392b;
+}
+
+.contenedor footer .links a:hover {
+	background: #e74c3c;
+}
+
+.contenedor footer .social{
+	background: #e67e22;
+}
+
+.contenedor footer .social a {
+	color: #fff;
+	padding: 10px;
+	text-decoration: none;
+	display: inline-block;
+}
+
+@media screen and (max-width: 800px) {
+	.contenedor {
+		flex-direction: column;
+	}
+
+	.contenedor aside {
+		flex-direction: row;
+		flex: 0;
+	}
+
+	.contenedor aside .widget {
+		flex-grow: 1;
+	}
+
+	.contenedor header nav {
+		width: 100%;
+	}
+
+	.contenedor header {
+		flex-direction: column;
+		padding: 0;
+	} 
+
+	.contenedor header .logo {
+		margin: 20px 0px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.contenedor aside {
+		flex-direction: column;
+	}
+
+	.contenedor footer {
+		/*flex-direction: row;*/
+		/*flex-wrap: wrap;*/
+
+		justify-content: space-around;
+	}
+} 
+
+@media screen and (max-width: 400px) {
+	.contenedor {
+		width: 100%;
+		margin: 0;
+	}
+}

@@ -1,0 +1,162 @@
+body {
+	background: #e6e6e6;
+}
+
+.contenedor {
+	width: 500px;
+	height: 200px;
+	background: #fff;
+	padding: 10px;
+	border:10px solid #2C3E50;
+	margin: 20px;
+
+
+	/*Flex*/
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+
+	/*flex-direction:row;*/
+	/*flex-wrap: no-wrap;*/
+	/*flex-flow:row nowrap;*/
+	justify-content: center;
+	align-items: center;
+
+	/*align-content: center;*/
+
+	flex-wrap: nowrap;
+	flex-direction: row;
+
+
+}
+
+.elemento {
+
+	/*flex-shrink: 1;*/
+
+    flex:1; 
+
+	color: #fff;
+	margin:5px;
+	width: 350px;
+	height: 50px;
+	text-align: center;
+	background: #E67E22;
+}
+
+/*.elemento2 {*/
+	/*flex-shrink: 2;*/
+/*}*/
+
+
+/*
+
+---------------------------------ANOTACIONES-------------------------------------------------------------------------------------------------------------------------------
+
+----Displey:flex; ó Displey:inline-flex;------------------------------------------------------------------------------------------------------------------------------------
+    Esta propiedad es la que utilizaremos para comvertir una caja en flexible, es una de las mas importantes y siempre se usa al pricipio de una nueva caja.
+Es normal que al utilizar unicamente esta propiedad los elementos se intenten acomodar en una sola linea, eso es porque es una caja flexible que 
+trabaja con lineas, solo tienes que darles mas estilos con flexbox para que se acomoden.  Tambien es normal de que si colocas esta propiedad el width
+o el heigth se coloquen al 100%, simplemente corrijelo diciendoles a los elementos su heigth o width determinado
+
+
+    display: -webkit-flex;
+	display: -ms-flexbox;
+
+	Estos de arriba son prefijos, la verdad no estoy muy seguro para que son, tengo entendido de que cuandon un navegador no permite flexbox
+es necesario utilizar estos prefijos para darles estilos, me imagino que estos prefijos de arriba son el equivalente a la primera propiedad
+de esta lista. Deben haber muchos mas prefijos pero creo que solo utilizaremos estos para este caso
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+  flex-direction:; row | column | row-reverse | column-reverse
+
+  Esta propiedad nos permite definir la direccion en la cual se van posicionar nuestras cajas, y tenemos todos esos parametros de alli arriba
+
+
+  row: Esta es la propiedad que viene por defecto, es la propiedad de filas y columnas.
+
+  row-reverse: esta propiedad es la misma qque la de arriba solo que en su forma inversa. Esto quiere decir que si tenemos un elemento numero 1 a la 
+  izquierda de nuestro documento, con esta propiedad ese mismo elemento estaria a la derecha de nuestro documento, quiere decir que esta propiedad 
+  cambia el orden y la direccion de nuestros elementos
+
+  column: esta propiedad lo que hace es que nos coloca nuestros elemetos en columnas, es decir, arriba hacia abajo
+
+  column-reverse: esta propiedad es la misma que la de arriba, solo que cambia la direccion de nuestros elementos, quiere decir que si tenemos un 
+  elemento numero 1 en la perte superios de nuestro documento, con esta propiedad pasara a estar en la parte inferior de nuestro documento
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+	flex-wrap:;  wrap | no-wrap | wrap-reverse
+
+	wrap: esta propiedad lo que hace es que si tenemos unos elmentos que son mas grande que su contenedor,  si el elemeto que le sigue al otro pasara
+	a estar debajo de este, es decir, si tenemos cuatro div's con un width de 200px dentro de otro div con un width de 500px, cada div que este dentro
+	del contenedor no cabrian uno al lado del otro, por eso, si un elemento no cabe al lado del otro, este elemeto pasara a la siguiente linea 
+
+	no-wrap: esta propiedad hace que todos los elementos se acomoden es una misma liena, esto lo hace modificando su width, sobreescribiendo que el 
+	tenia es elemento por defecto, si es que lo tenia.
+
+	wrap-reverse: esta propiedad lo que hace es que los elementos si no caben dentro de su contenedor se coloquen uno debajo del otro, pero de forma 
+	inversa, es decir, si tenemos un elemento numero uno al principio de nuestro documento, pasara a estar al final de nuestro documento
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+		flex-flow:;  valor de flex-direction y valor de flex-wrap
+
+		esta propiedad es un atajo de linea de codigo para las lineas de codigo flex-direction y flex-wrap, el primer valor siempre a ser de flex-direction
+		y el segundo sera de flex-wrap
+
+------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+	justify-content:; flex-start | flex-end | center | space-around | space-between
+
+		esta es una propìedad que nos permite definir el espacio que hay en nuestros elementos
+
+		flex-star: es la propiedad por defecto y hace que los elemento se posicionen a lado izquierdo sin alterar el orden de los elementos
+
+		flex-end: hace que los elementos se posicionen al lado derecho sin modificar el orden de los elementos
+
+		center: centra los elemetos
+
+		space-around: distribuye los elementos por toda la linea del elmento padre dejando un espaciado dentre ellos 
+
+		space-between: lo mismo que la de arriba solo que no tiene margenes al inicio ni al final solo entre los elementos
+
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+align-items:flex-start | flex-end | center | baseline |stretch;
+
+ estra propiedad nos ayuda a colocar los elemetos en lineas verticales
+
+
+ flex-start: posiciona los elementos hasta en principio de nuestro contenedor
+
+ flex-end: psociona los elemetos hasta abajo de nuestro contenedor
+
+ center: centra los elementos verticalmente
+
+ stretch: con estra propiedad los elementos hijo tendran que tener un heigth:auto; o no tenerlo directamenete, porque estra pripiedad hace que todos
+ los elemetos tengan un heigth del 100%, quiere decir que va a aabarcar el 100% verticalmente de nuestro contenedor padre
+
+
+baseline: esta es dificil de entender o al menos de explicar, digamos que si tenemos varios elementos con un tenxto dentro, los pontra a todos en la 
+misma altura
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+align-content: los mismos valores que align-items;
+
+esta propiedad recibe los mismos valores que align-items pero esta solo funciona cuando tenemos mas de 2 filas de elementos, si quieremos centrar o
+hacer cualquier movimiento cuando tenemos 2 filas de elementos hijos, solo estra propiedad nos podra servir, la de arriba no sirve cuando hay mas de 
+una linea de elementos
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+
+																propiedades para elementos hijo
+
+
+
+
+*/

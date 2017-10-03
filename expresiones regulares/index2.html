@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<!-- <div id="parrafo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores laboriosam nemo dicta eaque totam, veniam tenetur aspernatur ratione vero impedit, magnam veritatis unde. Soluta nam qui excepturi quod, iste fugit!</div> -->
+	<form action="">
+		<input type="text" name="texto" id="texto">
+		<input type="submit" value="enviar" id="boton">
+	</form>
+	<script>
+
+	// var article = "La verdad es que no soy nada malo, solo quiero decirte que eres malo.";
+	// document.write(article);
+	// var sustitucion = article.replace(/Malo/ig,"pene");
+	// document.write("<br>");
+	// document.write(sustitucion);
+
+	var texto = document.getElementById("texto"),
+		boton = document.getElementById("boton"),
+		form = document.getElementsByTagName('form')[0];
+
+
+		var Pfuncion = function (e) {
+			document.write(texto.value);
+			document.write("<br>");
+			var remplazo =texto.value.replace(/[a-z]/ig,"pene");
+			document.write(remplazo);
+			e.preventDefault();
+		}
+
+		var pene = function (e) {
+			Pfuncion(e);
+		}
+
+		form.addEventListener("submit", pene);
+
+
+
+	</script>
+</body>
+</html>

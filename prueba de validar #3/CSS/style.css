@@ -1,0 +1,41 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+body {
+	background: url(../imagenes/background.jpg) #e6e6e6;
+	font-family: roboto;
+}
+.main .wrap {
+	text-align: center;
+	color: #fff;
+}
+
+.main .wrap .formularios {
+ width: 50%;
+ margin: auto;
+ max-width: 1000px;
+ background: rgba(0,0,0, .3);
+ padding: 10px 20px;
+}
+
+.main .wrap .formularios form input {
+	display: block;
+	margin: auto;
+	width: 50%;
+	padding: 3px 5px;
+	margin-bottom: 10px;
+}
+.main .wrap .formularios form label{
+	margin-bottom:  3px;
+	display: block;
+}
+.main .wrap .formularios form input[type=submit] {
+	width: 30%;
+	margin-top: 20px;
+	padding: 0px;
+}
+.main .wrap h1 {
+	font-size: 40px;
+	color: rgba(255,255,255, .5);
+}

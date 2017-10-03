@@ -1,0 +1,60 @@
+body {
+	background: #e6e6e6;
+}
+*  {
+	margin: 0px;
+	padding: 0px;
+}
+header, .main, footer {
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+}
+
+header div img {
+	width: 200px;
+}
+header nav {
+	background:#86F850;
+	margin: 5px 0px;
+}
+header nav a {
+	color: #000;
+	text-decoration: none;
+	display: inline-block;
+	padding: 10px    20px;
+}
+header nav a:hover {
+	text-decoration: underline;
+	background: #6DEE30;
+}
+.main .articles {
+	width: 90%;
+	margin: auto;
+	
+}
+.main aside {
+	width: 40%;
+	display:inline-block;
+	position: relative;
+	left: 53%;
+	background:  #6DEE30;
+	padding: 10px;
+	border-radius: 5px;
+    
+}
+.main .articles article {
+	padding: 5px;
+	margin: 10px 0px;
+	background:  #6DEE30;
+	border-radius: 5px;
+}
+footer {
+	overflow: hidden;
+	padding: 10px;
+	background: #000;
+	color: #fff;
+	text-align:center;
+	margin: 5px 50px;
+	border-radius: 5px;
+}

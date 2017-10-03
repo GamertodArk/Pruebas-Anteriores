@@ -1,0 +1,200 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: roboto;
+}
+body {
+	background: #e6e6e6;
+}
+.wrapper {
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+
+	/*flex*/
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+}
+
+.wrapper header {
+	background: #D738BA;
+	width: 100%;
+	padding: 10px 20px;
+
+	/*flex*/
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.wrapper header .logo img {
+	width: 50px;
+}
+
+.wrapper header .logo a {
+	color: #000;
+	vertical-align: top;
+	line-height: 50px;
+	font-size: 30px;
+	text-decoration: none;
+}
+
+.wrapper header nav {
+	width: 50%;
+	background: #E43AC4;
+
+	/*flex*/
+	display: flex;
+	align-items: center;
+	align-content: center;
+}
+
+.wrapper header nav a {
+	color: #fff;
+	text-decoration: none;
+	/*background: #B61E9A;*/
+	text-align: center;
+	font-size: 15px;
+	padding: 20px;
+
+
+	/*flex*/
+	flex-grow: 1;
+	/*line-height: 100%;*/
+}
+
+.wrapper header nav a:hover {
+	-webkit-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+
+	background: #B61E9A;	
+}
+
+.wrapper .main {
+	background: #fff;
+	padding: 10px;
+
+	/*flex*/
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+
+	flex:1 1 70%;
+}
+
+.wrapper .main article {
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #000;
+}
+
+.wrapper .main article:nth-last-child(1) {
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+	border:none;
+}
+
+.wrapper  aside {
+	background:#EE9536;
+	padding: 20px;
+
+	/*flex*/
+	flex: 1 1 30%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	flex-direction: column;
+	/*justify-content: space-around;*/
+}
+
+.wrapper aside .widget {
+	background: #C96D0A;
+	height: 150px;
+	margin: 10px;
+}
+
+.wrapper footer {
+	background: rgba(0,0,0, .5);
+	width: 100%;
+	padding: 20px;
+
+	/*flex*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.wrapper footer nav {
+	 width: 50%;
+
+	/*flex*/
+	display: flex;
+}
+
+.wrapper footer a {
+	color: #fff;
+	text-decoration: none;
+	margin: 10px;
+}
+
+.wrapper footer a:hover {
+	text-decoration: underline;
+}
+
+@media screen and (max-width: 880px) {
+	.wrapper header nav {
+		flex-wrap: wrap;
+	}
+
+	.wrapper header nav a{
+		font-size: 15px;
+		padding: 10px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.wrapper {
+		flex-direction: column;
+	}
+
+	.wrapper header {
+		flex-direction: column;
+		padding: 0;
+	}
+
+	.wrapper header nav {
+		width: 100%;
+	}
+
+	.wrapper header nav a{
+		padding:  10px;
+	}
+
+	.wrapper header .logo {
+		margin-bottom: 50px;
+		margin-top: 10px;
+	}
+
+	.wrapper footer {
+		flex-direction: column;
+		justify-content: space-around;
+	}
+
+	.wrapper footer nav {
+		width: 100%;
+
+		/*flex*/
+		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.wrapper {
+		width: 100%;
+	}
+}

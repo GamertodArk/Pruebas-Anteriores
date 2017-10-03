@@ -1,0 +1,16 @@
+
+.Nozoom {
+	width: 200px;
+
+	-webkit-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}
+
+.zoom {
+	width: 700px;
+
+	-webkit-transition: all 500ms ease;
+	-o-transition: all 500ms ease;
+	transition: all 500ms ease;
+}

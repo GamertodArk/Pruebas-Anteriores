@@ -1,0 +1,55 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.contenedor {
+	width: 500px;
+	height: 400px;
+	background: #fff;
+	padding: 10px;
+	border:10px solid #2C3E59;
+	margin: 20px;
+
+	display: -webkit-flex;
+	display: -ms-flexbox; 
+	display: flex;
+
+
+	flex-wrap:no-wrap;
+	flex-direction: row;
+	
+	justify-content: center;
+	/*align-content: center;*/
+
+	align-items: center;
+
+	/*align-items: center;
+	esta propiedad es la que funciona con una sola linea de elementos
+	*/
+	
+
+
+	/*align-content: center;
+	esta propiedad la utilizamos cuando queremos centrar elementos con 2 lineas de elementos,
+	el parametro anterior y este reciben las mismas propiedades, pero se utilizan de manera diferente
+	*/
+}
+
+.elemento {
+	
+	flex-basis:50px;
+	flex: 1;
+
+
+	color: #fff;
+	margin: 5px;
+	height: 50px;
+	background: #E67E22;
+	text-align: center;
+}
+
+.elemento3 {
+	align-self: flex-start;
+	/*height: auto;*/
+}

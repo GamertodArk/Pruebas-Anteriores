@@ -1,0 +1,44 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background: #e6e6e6;
+}
+ .wrap {
+ 	width: 90%;
+ 	margin: auto;
+ 	max-width: 1000px;
+ }
+
+ header h1 {
+ 	text-align: center;
+ 	margin: 2% 0px;
+ 	width: 100%;
+	font-size: 50px;
+	background: #e2ff12;
+	padding: 2% 0px;
+ }
+
+ .wrap .main .estoy {
+ 	width: 70%;
+ 	float: left;
+ 	/*overflow: hidden;*/
+ 	background:#fff;
+ 	/*padding: 2%;*/
+ 	/*border-radius: 1%;*/
+ }
+
+ .wrap aside {
+ 	width: 20%;
+ 	/*padding:2%;*/
+ 	background: orange;
+ 	/*float: left;*/
+ 	/*overflow: hidden;*/
+ }
+
+ footer {
+ 	overflow: hidden;
+ 	background: #000;
+ }

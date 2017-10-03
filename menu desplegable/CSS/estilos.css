@@ -1,0 +1,29 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+header {
+	/*margin-top: 10px;*/
+	width: 100%;
+	/*height: 150px;*/
+	/*overflow: hidden;*/
+	/*position: relative;*/
+}
+nav {
+	/*top: -20px;*/
+	/*position: absolute;*/
+	/*left: 0;*/
+	/*right: 0;*/
+	margin: 20px auto;
+	max-width: 1000px;
+	width: 90%;
+}
+nav ul {
+	list-style: none;
+}
+nav > ul {
+	display: table;
+	width: 100%;
+	background: #000;
+	position: relative;
+}

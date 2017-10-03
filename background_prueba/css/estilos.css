@@ -1,0 +1,28 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: roboto;
+}
+
+.prueba {
+	background-image: url('../imagenes/pene.jpg');
+	height: 800px;
+	background-size: cover;
+
+
+	/*flex*/
+	display: flex;
+	/*align-items: center;*/
+	align-content: center;
+}
+
+.prueba article {
+	color: #fff;
+	width: 40%;
+	margin: auto;
+	text-align: center;
+
+}
+
+body {
+}

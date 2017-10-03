@@ -1,0 +1,91 @@
+*{
+	margin: 0px
+	padding:0px;
+	font-family: roboto;
+}
+header, .main, footer {
+	width: 90%;
+	max-width: 1000;
+	margin: auto;
+}
+header img {
+ 	width: 20%;
+ }
+ header nav {
+ 	background: #BD4BCE;
+ 	margin-bottom: 10px;
+ 	border-radius: 5px;
+
+ } header nav a {
+ 	color: #fff;
+ 	text-decoration: none;
+ 	padding: 10px 20px;
+ 	display: inline-block;
+ 	font-family: roboto;
+ }
+ header nav a:hover {
+ 	background: #8E4E98;
+ 	border-radius: 5px;
+ }
+.main form {
+	background:#BD4BCE;
+	padding: 10px 20px;
+	width: 35%;
+	border-radius: 5px;
+	position: relative;
+	left: 270px;
+	margin-bottom: 20px;
+}
+label {
+	display: block;
+	width: 100%;
+}
+
+.main form input[type="text"],
+.main form input[type="password"],
+.main form input[type="email"]{
+	margin-bottom: 20px;
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	border:1px solid #ccc;
+}
+.main form input[type="radio"] {
+	margin-bottom: 10%;
+}
+.main form input[type="submit"]{
+	margin-top: 10%;
+	width: 100%;
+	padding: 10px;
+}
+label {
+	margin-bottom: 10px;
+}
+
+.main form a{
+	color: #fff;
+	text-decoration: none;
+}
+.main form a:hover {
+	text-decoration: underline;
+}
+body {
+	background: #e6e6e6;
+}
+.main p {
+	font-size: 20px;
+	text-align: center;
+}
+footer {
+	background: #000;
+	color: #fff;
+	font-family: roboto;
+	text-align: center;
+	padding: 20px 0px;
+}
+footer a {
+	color: #fff;
+	display: inline-block;
+	padding: 0px 10px;
+	padding-top: 10px;
+}

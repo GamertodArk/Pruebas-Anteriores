@@ -1,0 +1,139 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #f2f2f2;
+	font-family: 'Nunito Sans', sans-serif;
+	font-size: 16px;
+	padding-top: 55px;
+}
+
+header {
+	position: fixed;
+	width: 100%;
+	background: #4357ad;
+	top: 0;
+}
+
+header nav {
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+
+	/*flex*/
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header .logo {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+header .logo img {
+	height: 22px;
+	vertical-align: top;
+}
+
+header nav .btn-menu{
+	display: none;
+	font-size: 1em;
+	text-decoration: none;
+	color: #fff;
+}
+
+
+header nav .enlaces {
+	display: inline-block;
+	text-align: right;
+}
+
+header nav .enlaces a {
+	color: #fff;
+	text-decoration: none;
+	/*margin:20px auto;*/
+	display: inline-block;
+	padding: 1em;
+	font-size: 1em;
+	text-align: center;
+}
+
+header nav .enlaces i {
+	margin-right: 5px;
+}
+
+header nav .enlaces a:hover {
+	background: #fff;
+	color: #4357ad
+}
+
+main {
+	width: 90%;
+	max-width: 1000px;
+	margin: auto;
+	background: #fff;
+	box-shadow: 0px 2px 5px rgba(0,0,0,0.75);
+	padding: 1em;
+}
+
+main h1 {
+	font-weight: normal;
+	margin-bottom: .5em;
+}
+
+main hr {
+	background:#4357ad;
+	border: none;
+	height: 2px;
+	margin-bottom: 1em;
+}
+
+main article p {
+	margin-bottom: 1em;
+}
+
+
+/*animacion del menu*/
+
+ .headroom {
+ 	transition: transform .3s ease;
+ }
+
+ .headroom--pinned {
+ 	transform: translateY(0%);
+ }
+
+ .headroom--unpinned {
+ 	transform: translateY(-100%);
+ }
+
+ /*media queries*/
+ @media screen and (max-width: 700px) {
+ 	header nav {
+ 		flex-direction: column;
+ 	}
+
+ 	header nav .logo{
+ 		width: 100%;
+ 		display: flex;
+ 		flex-direction: row;
+ 		justify-content: space-between;
+ 	}
+
+ 	header nav .logo .btn-menu {
+ 		display: inline-block;
+ 	}
+
+ 	header nav .enlaces {
+ 		width: 100%;
+ 		display: flex;
+ 		justify-content: space-around;
+ 		flex-wrap: wrap;
+ 		flex-direction: row;
+ 	}
+ }
